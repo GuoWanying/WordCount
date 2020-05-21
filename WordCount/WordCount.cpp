@@ -9,12 +9,14 @@
 
 int main(int argc, char* argv[]) {
     char c;
+    char parameter[5], filename[100];
     int Ccnt = 0, Wcnt = 0;
-        FILE * f;
+    FILE * f;
+    scanf("%s %s", parameter, filename);
  //   if (argc != 3) {
  //       printf("Parameter error!\n");
 //    }
-    if ((f = fopen(argv[2], "rb")) == NULL) {
+    if ((f = fopen(filename, "rb")) == NULL) {
         printf("Can not open the source file!\n");
             exit(0);
     }
@@ -25,8 +27,8 @@ int main(int argc, char* argv[]) {
                 Ccnt++;
         }
     Wcnt++;
-    if (strcmp(argv[1], "-w") == 0) printf("单词数：%d\n", Wcnt);
-    else if (strcmp(argv[1], "-c") == 0) printf("字符数：%d\n", Ccnt);
+    if (strcmp(parameter, "-w") == 0) printf("单词数：%d\n", Wcnt);
+    else if (strcmp(parameter, "-c") == 0) printf("字符数：%d\n", Ccnt);
     fclose(f);
     return 0;
 }
