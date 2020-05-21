@@ -1,6 +1,3 @@
-﻿// WordCount.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
-
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -23,8 +20,8 @@ int main(int argc, char* argv[]) {
                 Ccnt++;
         }
     Wcnt++;
-    if (strcmp(argv[1], "-w") == 0) printf("********单词数：%d ********\n", Wcnt);
-    else if (strcmp(argv[1], "-c") == 0) printf("********字符数：%d ********\n", Ccnt);
+    if (strcmp(argv[1], "-w") == 0) printf("********��������%d ********\n", Wcnt);
+    else if (strcmp(argv[1], "-c") == 0) printf("********�ַ�����%d ********\n", Ccnt);
     fclose(f);
     return 0;
 }
