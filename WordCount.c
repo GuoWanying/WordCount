@@ -20,8 +20,8 @@ int main(int argc, char* argv[]) {
                 Ccnt++;
         }
     Wcnt++;
-    if (strcmp(argv[1], "-w") == 0) printf("********µ¥´ÊÊı£º%d ********\n", Wcnt);
-    else if (strcmp(argv[1], "-c") == 0) printf("********×Ö·ûÊı£º%d ********\n", Ccnt);
+    if (strcmp(argv[1], "-w") == 0) printf("********å•è¯æ•°%d ********\n", Wcnt);
+    else if (strcmp(argv[1], "-c") == 0) printf("********å­—ç¬¦æ•°%d ********\n", Ccnt);
     fclose(f);
     return 0;
 }
